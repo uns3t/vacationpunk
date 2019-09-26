@@ -36,7 +36,13 @@ export default {
 
 <style>
   #router{
-    margin: 20px 80px 20px 80px;
+    margin: 0 20% 0 20%;
+    height: 100%;
+  }
+
+  html body {
+    height: 100%;
+    width: 100%;
   }
 
   body{
@@ -49,10 +55,11 @@ export default {
     width: 100%;
     height: 65px;
     background: #2c3e50;
+    padding: 0;
   }
   header li{
     font-size: 18px;
-    /*top: 30px;*/
+
   }
 
   footer{

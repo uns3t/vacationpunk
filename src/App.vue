@@ -9,6 +9,7 @@
           <li class="pure-menu-item"><a href="#" class="pure-menu-link"><img src="./assets/image/car.png" width="20px">  Car</a></li>
           <li class="pure-menu-item"><a href="#" class="pure-menu-link"><img src="./assets/image/car.png" width="20px"> Taxi</a></li>
         </ul>
+        <i class="el-icon-map-location" style="font-size: 15px;color: #f0f0f0;position:absolute;right:80px;top: 30px"> 您的位置 : 第三新南京市</i>
       </div>
     </header>
     <div id="router">
@@ -36,7 +37,7 @@ export default {
 
 <style>
   #router{
-    margin: 0 20% 0 20%;
+    margin: 0 18% 0 18%;
     height: 100%;
   }
 

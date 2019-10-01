@@ -2,9 +2,9 @@
     <div id="hotel">
         <br/>
         <br/>
-        <label style="color: #dfe4ea;font-size: 23px" >缤纷四季优惠搜不停</label>
+        <label style="color: #000000;font-size: 23px" >缤纷四季优惠搜不停</label>
         <br/>
-        <label style="color: #dfe4ea;font-size: 16px" >从舒适的乡村民宿到时髦的都市公寓</label>
+        <label style="color: #000000;font-size: 16px" >从舒适的乡村民宿到时髦的都市公寓</label>
         <br/>
         <br/>
         <el-form :inline="true" :model="Hotel_form" label-width="80px" style="width: 100%">
@@ -46,11 +46,6 @@
             <el-form-item>
                 <el-button type="primary">开启旅行</el-button>
             </el-form-item>
-
-
-
-
-
         </el-form>
 
 
@@ -89,10 +84,7 @@
 
 <style scoped>
     #hotel{
-        background: rgba(41, 128, 185,0.6);
         width: auto;
-        height: 100%;
-        /*border-radius: 20px;*/
         padding: 20px;
     }
 </style>

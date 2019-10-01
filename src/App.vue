@@ -16,9 +16,7 @@
       <router-view></router-view>
     </div>
 
-<!--    <footer>-->
-<!--      版权 © 1996–2019 Booking.com™. 版权所有.-->
-<!--    </footer>-->
+
   </div>
 </template>
 
@@ -37,20 +35,22 @@ export default {
 
 <style>
   #router{
-    margin: 0 18% 0 18%;
+    margin: 0 15% 0 15%;
     height: 100%;
+    background: rgba(255,255,255,1.0);
   }
 
-  html body {
+  html,body,#app{
     height: 100%;
-    width: 100%;
+    padding: 0;
+    margin: 0;
   }
 
   body{
     background-image: url(./assets/image/bg0.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
   }
   header{
     width: 100%;
@@ -62,24 +62,7 @@ export default {
     font-size: 18px;
 
   }
-
-  footer{
-    height:20px;
-    background:#2c3e50;
-    color: #ffffff;
-    width:100%;
-    position:absolute;
-    bottom:0;
-    left:0;
-    font-size: 15px;
-
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
   }
-
-
-
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  /*margin: 10px;*/
-
-}
 </style>

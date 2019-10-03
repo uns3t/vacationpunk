@@ -47,9 +47,9 @@
         </div>
 
         <div class="hotellist">
-            <Hoteldispaly hotelname="南京酒店" hoteladdr="南京市江宁区九龙湖3号" hotelscore="9.8"></Hoteldispaly>
-            
-
+            <div v-for="temp in hoteldata">
+                <Hoteldispaly :hotelname="temp.hotelname" :hotelscore="temp.hotelscore" :hoteladdr="temp.hoteladdr" :hotelimg="temp.hotelimg"></Hoteldispaly>
+            </div>
         </div>
     </div>
 
@@ -73,7 +73,8 @@
                 Hotel_form: {
                     name:"",
                     date:"",
-                }
+                },
+                hoteldata:[]
             }
         },
         computed:{
@@ -82,10 +83,19 @@
             }
         },
         methods:{
-            tohotelmsg(){
-
+            async getHotelList(){
+                let res=await $axios.post("/hotelList")
+                console.log(res)
             }
+        },
+        created:async function () {
+            console.log(window.hotelform)
+            let res=await $axios.post("/hotelList",window.hotelform)
+            console.log(res.data.hotellist)
+            this.hoteldata=res.data.hotellist
+            console.log(this.hoteldata[0].hotelname)
         }
+
 
     }
 </script>

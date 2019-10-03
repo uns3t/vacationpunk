@@ -7,13 +7,13 @@
         <label style="color: #000000;font-size: 16px" >从舒适的乡村民宿到时髦的都市公寓</label>
         <br/>
         <br/>
-        <el-form :inline="true" :model="Hotel_form" label-width="80px" style="width: 100%">
+        <el-form :inline="true" :model="hotelform" label-width="80px" style="width: 100%">
             <el-form-item style="width: 200px">
-                <el-input v-model="Hotel_form.name" placeholder="地区"></el-input>
+                <el-input v-model="hotelform.name" placeholder="地区"></el-input>
             </el-form-item>
             <el-form-item >
                 <el-date-picker :inline="true"
-                                v-model="Hotel_form.date"
+                                v-model="hotelform.date"
                                 type="daterange"
                                 range-separator="-"
                                 start-placeholder="入住"
@@ -44,7 +44,7 @@
             </el-form-item>
 
             <el-form-item>
-                <el-button type="primary">开启旅行</el-button>
+                <el-button type="primary" @click="getHotelList">开启旅行</el-button>
             </el-form-item>
         </el-form>
 
@@ -63,7 +63,7 @@
                 num2:1,
                 num3:1,
 
-                Hotel_form: {
+                hotelform: {
                     name:"",
                     date:"",
                 }
@@ -75,7 +75,9 @@
             }
         },
         methods:{
-            tohotelmsg(){
+            getHotelList(){
+                window.hotelform=this.hotelform
+                this.$router.replace('/hotelmsg')
 
             }
         }

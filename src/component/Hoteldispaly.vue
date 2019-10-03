@@ -12,7 +12,7 @@
 <script>
     export default {
         name: "Hoteldispaly",
-        props:["hotelname","imgurl","hoteladdr","hotelscore"],
+        props:["hotelname","imgurl","hoteladdr","hotelscore","hotelimg"],
     }
 </script>
 

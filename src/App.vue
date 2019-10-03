@@ -4,12 +4,12 @@
       <div class="pure-menu pure-menu-horizontal">
         <a href="#" class="pure-menu-heading pure-menu-link"><img src="./assets/image/logo.png" width="60%" height="60%"></a>
         <ul class="pure-menu-list">
-          <li class="pure-menu-item"><a href="#" class="pure-menu-link"><img src="./assets/image/hotel.png" width="20px">  Hotel</a></li>
-          <li class="pure-menu-item"><a href="#" class="pure-menu-link"><img src="./assets/image/plane.png" width="20px">  Plane</a></li>
-          <li class="pure-menu-item"><a href="#" class="pure-menu-link"><img src="./assets/image/car.png" width="20px">  Car</a></li>
-          <li class="pure-menu-item"><a href="#" class="pure-menu-link"><img src="./assets/image/car.png" width="20px"> Taxi</a></li>
+          <li class="pure-menu-item" @click="toOther('/hotel')"><a href="#" class="pure-menu-link"><img src="./assets/image/hotel.png" width="20px">  Hotel</a></li>
+          <li class="pure-menu-item" @click="toOther('/plane')"><a href="#" class="pure-menu-link"><img src="./assets/image/plane.png" width="20px">  Plane</a></li>
+          <li class="pure-menu-item" @click="toOther('/car')"><a href="#" class="pure-menu-link"><img src="./assets/image/car.png" width="20px">  Car</a></li>
+          <li class="pure-menu-item" @click="toOther('/taxi')"><a href="#" class="pure-menu-link"><img src="./assets/image/car.png" width="20px"> Taxi</a></li>
         </ul>
-        <i class="el-icon-map-location" style="font-size: 15px;color: #f0f0f0;position:absolute;right:80px;top: 30px"> 您的位置 : 第三新南京市</i>
+        <i class="el-icon-map-location" style="font-size: 15px;color: #f0f0f0;position:absolute;right:80px;top: 30px"> 位置 : 3番目新南京市</i>
       </div>
     </header>
     <div id="router">
@@ -29,6 +29,11 @@ export default {
   name: 'app',
   components: {
 
+  },
+  methods:{
+    toOther(e){
+      this.$router.replace(e)
+    }
   }
 }
 </script>

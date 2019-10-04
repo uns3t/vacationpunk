@@ -5,31 +5,32 @@ mongoose.connect('mongodb://localhost:27017/vacationpunk');
 var Schema = mongoose.Schema
 
 //新建约束
-var hotelSchema = new Schema({
-    place:{
+var planeSchema = new Schema({
+    planestartplace:{
         type:String,
         require:true
     },
-    hotelname:{
+    planeendplace:{
         type:String,
         require:true
     },
-    hotelimg:{
+
+    planestart:{
         type:String,
         require:true
     },
-    hoteladdr:{
+    planeend:{
         type:String,
         require:true
     },
-    hotelscore:{
-        type:String,
+    planemoney:{
+        type:Number,
         require:true
-    }
+    },
 },
-    {
-        collection:"hoteldb"
-    })
+{
+    collection:"planedb"
+})
 //导出模板构造函数
-module.exports = mongoose.model('hoteldb',hotelSchema);
+module.exports = mongoose.model('planedb',planeSchema);
 

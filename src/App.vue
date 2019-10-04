@@ -41,15 +41,14 @@ export default {
 <style>
   #router{
     margin: 0 15% 0 15%;
-    height: 100%;
-    background: rgba(255,255,255,1.0);
+    /*background: rgba(255,255,255,1.0);*/
   }
 
-  html,body,#app{
-    height: 100%;
-    padding: 0;
-    margin: 0;
-  }
+  /*html,body,#app{*/
+  /*  height: 100%;*/
+  /*  padding: 0;*/
+  /*  margin: 0;*/
+  /*}*/
 
   body{
     background-image: url(./assets/image/bg0.jpg);

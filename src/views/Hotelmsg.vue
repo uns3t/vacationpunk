@@ -116,7 +116,7 @@
         float: left;
     }
 
-    .hoteldetail{
+    .hotellist{
         width: 70%;
         height: 100%;
         float: left;

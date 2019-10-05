@@ -36,7 +36,7 @@ window.$router=new Router({
             component:Car
         },
         {
-            path:"carmsg",
+            path:"/carmsg",
             component:Carmsg
         },
         {

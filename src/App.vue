@@ -40,7 +40,7 @@ export default {
 
 <style>
   #router{
-    margin: 0 15% 0 15%;
+    /*margin: 0 15% 0 15%;*/
     /*background: rgba(255,255,255,1.0);*/
   }
 
@@ -50,17 +50,18 @@ export default {
   /*  margin: 0;*/
   /*}*/
 
-  body{
-    background-image: url(./assets/image/bg0.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    /*background-attachment: fixed;*/
-  }
+  /*body{*/
+  /*  background-image: url(./assets/image/bg0.jpg);*/
+  /*  background-repeat: no-repeat;*/
+  /*  background-size: cover;*/
+  /*  !*background-attachment: fixed;*!*/
+  /*}*/
   header{
     width: 100%;
     height: 65px;
     background: #2c3e50;
     padding: 0;
+    /*position: fixed;*/
   }
   header li{
     font-size: 18px;

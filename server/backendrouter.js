@@ -1,6 +1,7 @@
 var express=require('express');
 var hoteldb=require('./todb/hoteldb')
 var planedb=require('./todb/planedb')
+var cardb=require('./todb/cardb')
 var router=express.Router()
 
 
@@ -27,6 +28,20 @@ router.post("/planeList",function (req,res) {
     planedb.find({planestartplace: req.body.planestartplace,planeendplace: req.body.planeendplace},function (err,planetemp) {
         thedata={
             planelist:planetemp,
+            success:true
+        }
+        console.log(thedata)
+        res.send(thedata)
+
+    })
+})
+
+router.post("/carList",function (req,res) {
+    console.log(req.body)
+    var thedata={}
+    cardb.find({carplace: req.body.carplace},function (err,cartemp) {
+        thedata={
+            carlist:cartemp,
             success:true
         }
         console.log(thedata)

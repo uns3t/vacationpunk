@@ -1,5 +1,5 @@
 <template>
-    <div id="hotel">
+    <div class="Car">
         <br/>
         <br/>
         <label style="color: #000000;font-size: 23px" >不管哪种旅途，都有好车相伴</label>
@@ -26,10 +26,6 @@
                 <el-button type="primary" @click="getCarList">搜索车型</el-button>
             </el-form-item>
         </el-form>
-
-
-
-
     </div>
 </template>
 
@@ -57,8 +53,10 @@
 </script>
 
 <style scoped>
-    #hotel{
-        width: auto;
+    .Car{
+        text-align: center;
+        background: #F0F0F0;
         padding: 20px;
+        height: 200px;
     }
 </style>

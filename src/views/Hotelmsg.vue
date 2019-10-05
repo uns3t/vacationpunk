@@ -1,6 +1,6 @@
 <template>
-    <div id="hotelmsg">
-        <div id="search">
+    <div class="hotelmsg">
+        <div class="search">
             <br/>
             <br/>
             <el-form :inline="true" :model="Hotel_form" label-width="80px" style="width: 100%">
@@ -102,25 +102,25 @@
 
 <style scoped>
 
-    #hotelmsg{
-        height: 100%;
+    .hotelmsg{
+        /*background-color: #f0f0f0;*/
+        /*text-align: center;*/
+        margin: 20px 15% 20px 15%;
     }
-    #search{
+    .search{
+
         width: 250px;
         border: 1px #00ffff solid;
         border-radius: 5px;
         padding-left: 20px;
-
         padding-right: 20px;
-        height: 100%;
-        float: left;
+        margin-right: 20px;
+        display: inline-block;
     }
 
     .hotellist{
         width: 70%;
-        height: 100%;
-        float: left;
-
+        display: inline-block;
     }
 
 

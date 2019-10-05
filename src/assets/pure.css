@@ -1424,7 +1424,7 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 .pure-menu-active > .pure-menu-link,
 .pure-menu-link:hover,
 .pure-menu-link:focus {
-    background-color: #8c939d;
+    background-color: #34495e;
 }
 
 .pure-menu-selected .pure-menu-link,

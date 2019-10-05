@@ -5,6 +5,8 @@
         <label style="color: #000000;font-size: 23px" >缤纷四季优惠搜不停</label>
         <br/>
         <label style="color: #000000;font-size: 16px" >从舒适的乡村民宿到时髦的都市公寓</label>
+
+
         <br/>
         <br/>
         <el-form :inline="true" :model="hotelform" label-width="80px" style="width: 100%">
@@ -21,7 +23,7 @@
                 </el-date-picker>
             </el-form-item>
             <el-form-item >
-                <el-select multiple :placeholder="person">
+                <el-select multiple :placeholder="person" style="width: 250px">
                     <el-option>
                         <span style="float: left">成人</span>
                         <span style="float: right">
@@ -86,7 +88,10 @@
 
 <style scoped>
     #hotel{
-        width: auto;
+        text-align: center;
+        background: #F0F0F0;
         padding: 20px;
+        height: 200px;
+
     }
 </style>
